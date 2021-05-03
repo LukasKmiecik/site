@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/gallery.css" rel="stylesheet" type="text/css">
+    <link href="../css/up.css" rel="stylesheet">
+    <link href="../img/favicon2.png" rel="icon" type="image/png">
+    <title>Chata w Górach</title>
+</head>
+<body style="background-color: black;">
+    <div class="header">
+        <div class="logo cav"><a href="../index.html"> <img src="../img/Lascaux.png" alt="" class="logo__L"> <img src="../img/Designe.png" alt="" class="logo__D"></a></div>
+            <ul class="tab">
+                <li class="home"><a href="../index.html">Lascaux</a></li>
+                <li class="offer"><a href="oferta.html">oferta</a></li>
+                <li class="portfolio" style="border-bottom: 1px solid var(--first-color-dark);"><a href="portfolio.html">portfolio</a></li>
+                <li class="wspolpraca"><a href="Lascaux.html">wspolpraca</a></li>
+                <li class="contact"><a href="#kontakt" onclick="closee()" >kontakt</a></li>
+            </ul>
+    </div>
+
+
+    <div class="menu">
+        <div class="menu__bar">
+            <span class="open" id="open" onclick="openn()">&#8801</span>
+            <span class="close" id="close" onclick="closee()" >&times</span>
+        </div>
+    </div>
+    <div class="menu__backgroud" id="back">
+        <div class="menu__box">
+            <div class="box"><a href="../index.html">Lascaux</a></div>
+            <div class="box"><a href="../html/oferta.html">Oferta</a></div>
+            <div class="box" style="border-bottom: 1px solid var(--first-color-dark);"><a href="../html/portfolio.html">Portfolio</a></div>
+            <div class="box"><a href="../html/wspolpraca.html">Wspolpraca</a></div>
+            <div class="box"><a href="#kontakt">Kontakt</a></div>
+        </div>
+    </div>
+
+
+
+    <div class="tresc">
+        <div class="tyt-po">Chata w Górach</div>
+        <div class="tre-po">
+            Nieduży dom wakacyjny zlokalizowany jest nad brzegiem sztucznego jeziora w południowej Polsce. Działka leży na skarpie z widokiem na jezioro i dwa 
+            średniowieczne zamki. Wnętrze domu oraz jego lokalizacja na działce zostały dopasowane do widoku. Ściana domu od strony jeziora jest całkowicie przeszklona. 
+            Dwa przesuwne okna pozwalają na otwarcie połowy ściany i łączą wnętrze z tarasem. Bryła domu kształtem, kolorystyką i użytymi materiałami nawiązuje do 
+            tradycyjnej zabudowy pasterskiej. Sto metrów od domu mieści się skansen z budynkami z XIX wieku, które zostały przeniesione z dna tworzonego jeziora. 
+            Dom nawiązuje do tych tradycji, ale ma nowoczesną formę i rozwiązania techniczne. Charakterystyczny dach i ściana frontowa pokryte zostały wiórem osikowym. 
+            Płynnie przechodzi on z dachu na ścianę. Woda spływa w czasie deszczu po domu do samej ziemi bez użycia rynien. Wnętrze domu stanowią salon z kuchnią i 
+            jadalnią, dwie łazienki oraz garderoba na parterze, dwa pokoje dziecinne i sypialnia na poddaszu oraz pokój gościnny, pomieszczenie techniczne i wc w piwnicy. 
+            Wszystkie pomieszczenia mają ogrzewaną posadzkę pomalowaną farbą do betonu. Deski drewniane ręcznie postarzane ułożono na sufitach i ścianach. W salonie wiszą 
+            dwie ogromne, wykonane na zamówienie lampy. Ścianę kuchni zdobi wycięty w stalowej płycie znak kwiatu życia – typowy lokalny symbol ludowy.
+        </div>
+        <div class="gallery">
+            <div class="zdj" id="zd11"><img src="../img/portfolio/CHATA_W_GÓRACH/11-56.jpg"alt="" onclick="showBig(),next(n)"></div>
+            <div class="zdj" id="zd1"><img src="../img/portfolio/CHATA_W_GÓRACH/12-51.jpg"alt="" onclick="showBig()"></div>
+            <div class="zdj" id="zd2"><img src="../img/portfolio/CHATA_W_GÓRACH/13-49.jpg"alt="" onclick="showBig()"></div>
+            <div class="zdj" id="zd3"><img src="../img/portfolio/CHATA_W_GÓRACH/14-47.jpg"alt="" onclick="showBig()"></div>
+            <div class="zdj" id="zd4"><img src="../img/portfolio/CHATA_W_GÓRACH/15-44.jpg"alt="" onclick="showBig()"></div> 
+            <div class="zdj" id="zd5"><img src="../img/portfolio/CHATA_W_GÓRACH/17-40.jpg"alt="" onclick="showBig()"></div>
+            <div class="zdj" id="zd6"><img src="../img/portfolio/CHATA_W_GÓRACH/18-39.jpg"alt="" onclick="showBig()"></div>
+            <div class="zdj" id="zd7"><img src="../img/portfolio/CHATA_W_GÓRACH/19-33.jpg"alt="" onclick="showBig()"></div>
+            <div class="zdj" id="zd8"><img src="../img/portfolio/CHATA_W_GÓRACH/1-74.jpg"alt="" onclick="showBig()"></div>
+            <div class="zdj" id="zd8"><img src="../img/portfolio/CHATA_W_GÓRACH/10-61.jpg"alt="" onclick="showBig()"></div>
+            <div class="zdj" id="zd10"><img src="../img/portfolio/CHATA_W_GÓRACH/16-42.jpg"alt="" onclick="showBig()"></div>
+        </div>
+        <div class="big__picture__background" id="big__picture__background">
+            <span class="close" id="close__big" onclick="hiddenBig()" >&times</span>
+            <div class="zdj__big" id="zd__big11"><img src="../img/portfolio/CHATA_W_GÓRACH/11-56.jpg"alt="" style="width: 30%;"></div>
+            <div class="zdj__big" id="zd__big1"><img src="../img/portfolio/CHATA_W_GÓRACH/12-51.jpg"alt=""></div>
+            <div class="zdj__big" id="zd__big2"><img src="../img/portfolio/CHATA_W_GÓRACH/13-49.jpg"alt=""></div>
+            <div class="zdj__big" id="zd__big3"><img src="../img/portfolio/CHATA_W_GÓRACH/14-47.jpg"alt=""></div>
+            <div class="zdj__big" id="zd__big4"><img src="../img/portfolio/CHATA_W_GÓRACH/15-44.jpg"alt=""></div> 
+            <div class="zdj__big" id="zd__big5"><img src="../img/portfolio/CHATA_W_GÓRACH/17-40.jpg"alt=""></div>
+            <div class="zdj__big" id="zd__big6"><img src="../img/portfolio/CHATA_W_GÓRACH/18-39.jpg"alt=""></div>
+            <div class="zdj__big" id="zd__big7"><img src="../img/portfolio/CHATA_W_GÓRACH/19-33.jpg"alt=""></div>
+            <div class="zdj__big" id="zd__big8"><img src="../img/portfolio/CHATA_W_GÓRACH/1-74.jpg"alt=""></div>
+            <div class="zdj__big" id="zd__big8"><img src="../img/portfolio/CHATA_W_GÓRACH/10-61.jpg"alt=""></div>
+            <div class="zdj__big" id="zd__big10"><img src="../img/portfolio/CHATA_W_GÓRACH/16-42.jpg"alt=""></div>
+        </div>
+    </div>
+
+    <!-- Up -->
+    <div class="up"><a class="upp" href="#">&#94</a></div>
+
+    <!-- kontakt -->
+    <div class="kontakt"><a id="kontakt"></a>
+        <div class="kont">kontakt</div>
+        <div class="par">Zapraszamy do kontaktu z naszym biur celem umówienia spotkania i bliższego poznania naszej kompleksowej 
+                         oferty z zakresu projektowania i aranżacji wnętrz.</div>
+                         <div class="dane"><span class="l__f__l"> <img src="../img/Lascaux.png" alt="" class="logo__footer__L"></span> <span class="l__f__d"> <img src="../img/Designe.png" alt="" class="logo__footer__D"></span><h3>adres: Sjoveien 2D</h3> <h3>tel: 92513192</h3> <h3><a href="mailto=kmieciklu@gmail.com">Lascaux@gmail.com</a></h3></div>    </div>
+
+    <footer>
+        <div class="pp"><a href="pp.html" torget="_self">Polityka prywatności</a></div>
+        <div class="des">Copyright 2021 © Lascaux  | <a href="#">Designed by ŁK</a></div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

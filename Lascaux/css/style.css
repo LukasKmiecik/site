@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    --first-color: #38352f;
+    --first-color-dark: #682919;
+    --first-color-darken: #000000;
+    --first-color-light: #AC8341;
+
+    --body-font: sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --mb-1: .5rem;
+    --mb-2: .1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+}
+
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+body{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--first-color-light);
+    line-height: 1.6;
+    height: 100%;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li:hover{
+    color: var(--first-color-dark);
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img{
+    display: block;
+}
+
+.tab{
+    text-transform: uppercase;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: black;
+    color: var(--first-color);
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: var(--first-color-darken);
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 250px  auto;
+    align-items: center;
+    grid-template-areas: "logo . tab";
+    z-index: 99;
+}
+.vi1{
+    display: none;
+}
+.menu{
+    display: none;
+}
+.menu__backgroud{
+    display: none;
+}
+.logo__L,
+.logo__D{
+    filter: invert(100%);       
+    width:120px;
+}
+.logo__L{
+    margin-top: 15px;
+    margin-left: 30%;
+}
+
+.logo__D{
+    margin-left: 40%;
+}
+.logo__footer__L,
+.logo__footer__D{
+    filter: invert(100%);       
+    width:120px;
+}
+.l__f__l{
+    width: auto;
+    float: left;
+    margin-left: calc( 50% - 134px );
+}
+.l__f__d{
+    width: auto;
+}
+.cav{
+    font-family: 'Caveat', cursive;
+}
+
+.logo{
+    width: auto;
+    height: auto;
+    align-self: center;
+    font-size: 42px;
+    grid-area: logo;
+}
+
+.tab{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+    grid-area: tab;
+}
+.vi{
+    width: 100%;
+    margin-top: -125px;
+    z-index: 10;
+}
+.te{
+    padding: 50px 0 15px 0 ;
+    font-size: 2.75rem;
+    text-align: center;
+}
+
+.line{
+    border-bottom: 1px solid var(--first-color-light);
+}
+
+.wst{
+    font-size: var(--smaller-font-size);
+    justify-self: center;
+    text-transform: uppercase;
+    padding-bottom: var(--mb-3);
+}
+
+.tyt{
+    font-size: var(--h2-font-size);
+    padding-bottom: var(--mb-3);
+    justify-self: center;
+}
+.tre{
+    justify-self: center;
+    font-size: var(--h3-font-size);
+}
+
+.kontakt{
+    width: 100%;
+    height: auto;
+    background-color: var(--first-color-darken);
+    padding: 30px;
+}
+
+.kont{
+    text-transform: uppercase;
+    font-size: var(--h1-font-size);
+    text-align: center;
+}
+
+.par{
+    padding: 20px;
+    text-align: center;
+}
+
+.dane{
+    text-align: center;
+}
+
+.pp{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+.des{
+    text-align: right;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.tlo{
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100fr;
+    height: 650px;
+}
+
+.tyt-ofe{
+    width: 100%;
+    font-size: 36px;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--first-color-dark);
+}
+
+.tyt-ofe::after{
+    content: "";
+    background-image: url(../img/ozd2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    height: 35px;
+    width: 100fr;
+}
+
+.tre-ofe{
+    padding: 35px 100px;
+    font-size: var(--h2-font-size);
+    color: var(--first-color-dark);
+    column-count: 2;
+    column-gap: 100px;
+}
+
+.tyt-eta{
+    text-transform: uppercase;
+    padding: var(--mb-4);
+}
+
+.tre-eta{
+    padding-bottom: var(--mb-5);
+}
+
+.pol-ofe{
+    padding-bottom: 4.5rem;
+}
+
+.por{
+    margin-top: 100px;
+    background-color: var(--first-color-darken);
+}
+.por-box{
+    width: 100fr;
+    height: 650px;
+    background-color: var(--first-color-darken);
+    background-position: center;
+    background-size: cover;
+    padding-bottom: var(--mb-5);
+    margin-top: var(--mb-5);
+}
+
+.tyt-por{
+    display: inline-block;
+    width: auto;
+    background-color: transparent;
+    color: var(--first-color-light);
+    margin: 0 0 0 45px;
+    padding-top: 35px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 34px;
+    border-bottom: 1px solid var(--first-color) ;
+    text-shadow: 2px 2px 1px var(--first-color-dark);
+    box-shadow: 0px 6px 6px -5px var(--first-color-dark);
+}
+
+.tresc{
+    margin-top: 100px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 40px;
+    row-gap: 50px;
+    margin: 0 100px 0 100px;
+}
+  
+img{
+    width: 350px;
+}
+  
+.zdj{
+    width: 380px;
+    height: auto;
+    padding: 15px;
+    border: 1px solid #999999;
+    margin: 0 auto;
+
+}
+.zdj:hover{
+    box-decoration-break: slice; 
+    cursor: pointer;   
+}
+.big__picture__background{
+    display: none;
+    position:fixed;
+    background-color: black;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.zdj__big{
+    display: none;
+    object-fit: scale-down;
+    
+}
+.close{
+    line-height: 60px;
+    font-size: 25px;
+    margin-left: 90%;
+    cursor: pointer;
+    display: none;
+}
+.section{
+    display: grid;
+    margin: 50px;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+.tre-po{
+    margin: 0 250px 30px 250px;
+    font-size: 18px;
+}
+
+.tyt-po{
+    margin: 0 0 25px 250px;
+    font-size: var(--mb-4);
+}
+
+.ele{
+    min-height: 500px;
+    height: auto;
+    padding: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--first-color-dark);
+    display: grid;    
+}

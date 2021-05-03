@@ -1,0 +1,141 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.h2__foot,
+.h3__foot {
+    text-transform: capitalize;
+    font-style: normal;
+    margin:0 0 0 40px;
+}
+
+.h3__foot {
+    margin-left: 40px;
+    margin-bottom: 2rem;
+}
+.contact {
+    display: flex;
+    padding: 0 115px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: rgb(42, 42, 42);
+}
+
+.contact__info,
+.shortcut {
+    margin-top: 30px;
+    color: white;
+    width: 30%;
+}
+
+.contact__info {
+    color: red;
+}
+
+.bx {
+    float: left;
+    color: red;
+    font-size: 30px;
+}
+
+.foot {
+    background-color: black;
+    color: blanchedalmond;
+}
+
+.mail {
+    color: red;
+    text-decoration: none;
+}
+
+.shortcut {
+    padding-left: 40px;
+}
+.shortcut__title {
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-size: 24px;
+    color: white;
+}
+
+.a__shortcut__title {
+    color: white;
+    text-decoration: none;
+}
+
+.hr__shortcut__title {
+    margin-bottom: 15px;
+    width: 20%;
+}
+
+.shortcut__text {
+    margin-bottom: 20px;
+    color: #808182;
+    font-size: 18px;
+}
+
+.read__more {
+    margin: 25px 0;
+    background-color: red;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.read__more:hover {
+    background-color: rgb(128, 20, 20);
+    color: rgb(201, 201, 201);
+}
+
+.shortcut__link {
+    color: #808182;
+    text-decoration: none;
+}
+
+.shortcut__link:hover {
+    color: red;
+}
+
+.foot {
+    padding: 20px 0;
+}
+
+.h4__foot,
+.h5__foot,
+.lumonor {
+    display: inline;
+}
+
+.h4__foot,
+.h5__foot {
+    color: white;
+}
+
+.h4__foot {
+    margin-left: 115px;
+}
+
+.h5__foot {
+    margin: 0 10px 0 670px;
+}
+.lumonor {
+    float: right;
+    margin-right: 115px;
+    text-transform: capitalize;
+}
+
+.a__lumonor {
+    color: rgba(199, 137, 137, 0.397);
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.a__lumonor:hover {
+    color: rgb(150, 100, 100);
+}

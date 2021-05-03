@@ -1,0 +1,89 @@
+
+:root {
+    --first-color: black;
+    --mine-width: calc (100% - 230px);
+    --header-height: 150px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+menu {
+    position: absolute;
+    width: 100%;
+    height: var(--header-height);
+    background-image: url('../media/default-header.jpg');
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+a:hover {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+ol {
+    float: left;
+}
+
+.header__logo {
+    margin: 30px 0 0 115px;
+    float: left;
+}
+
+.company__name {
+    float: left;
+    margin: 40px 10px 0 20px;
+    font-size: 2rem;
+    color: rgb(170, 160, 135);
+    text-transform: capitalize;
+}
+.header__phone {
+    float: right;
+    margin: 47px 10px 0 0;
+    font-size: 1.5rem;
+    color: white
+}
+
+.header__social {
+    float: right;
+    padding-right: 115px;
+    margin: 43px 0 0 0;
+    color: white;
+}
+
+.social__item {
+    width: 30px;
+    height: 30px;
+    border-radius: 40%;
+    margin: 5px;
+}
+/*
+.bx {
+    font-size:24px;
+} 
+*/
+
+nav {
+    width: var(--mine-width);
+    background-color: white;
+    background-image: url('../media/body_dots.png');
+    height: 50px;
+    margin: 115px 115px 0 115px;
+    border: 1px solid black;
+    list-style-type: none;
+}
+.nav__item {
+    width: 14.2%;
+    height: 30px;
+    text-align: center;
+    line-height: 45px;
+}

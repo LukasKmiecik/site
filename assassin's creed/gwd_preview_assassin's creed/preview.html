@@ -1,0 +1,34 @@
+<html><head>
+    <!--
+    Load various Web Components polyfills required by IE and Edge. While the polyfills are
+    not needed for other browsers, they're loaded irrespective of browser features because we rely
+    on the polyfill's `WebComponentsReady` event as a signal that the app is ready to be initialized
+    (see init.js).
+    -->
+    <!-- Polyfill Web Components. -->
+    <script src="webcomponentsjs/webcomponents-lite.js"></script>
+
+    <!-- Polyfill Web Animations. This file is necessary for some paper elements. -->
+    <script src="webcomponentsjs/web-animations-next-lite.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Roboto:regular">
+
+    <script src="preview_polymer.js"></script>
+
+    <style>
+      body {
+        margin: 0;
+      }
+
+      tf-creative-preview {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  <script>window.gwdPreview = {"config":{"uuid":1617747997314,"previewPath":"index.html","modes":["mobile","desktop"],"sizes":[],"feeds":{},"feedNames":[],"defaults":{"mode":"desktop","modeSettings":{"mobile":{"device":"pixel2xl","feed":null},"desktop":{"feed":null}}}},"strings":{"MSG_ALL_FEEDS_MODE":"Wszystkie przyk\u0142adowe dane","MSG_ALL_SIZES_MODE":"Wszystkie rozmiary","MSG_CUSTOM":"Niestandardowy","MSG_CUSTOM_SIZE":"Rozmiar niestandardowy","MSG_DESKTOP_MODE":"Komputer","MSG_DEVICE":"Urz\u0105dzenie","MSG_MOBILE_MODE":"Kom\u00f3rka","MSG_NO_SAMPLE_DATA":"Brak przyk\u0142adowych danych","MSG_NO_SAMPLE_DATA_TO_PREVIEW":"Aby wy\u015bwietli\u0107 podgl\u0105d, wybierz przyk\u0142adowe dane.","MSG_NO_SIZES_TO_PREVIEW":"Aby wy\u015bwietli\u0107 podgl\u0105d, wybierz rozmiary.","MSG_NONE_SELECTED":"Niczego nie wybrano","MSG_PARALLAX_MODE":"Mo\u017cliwo\u015b\u0107 przewijania","MSG_PREVIEW_MODE":"Tryb podgl\u0105du","MSG_RELOAD":"Od\u015bwie\u017c","MSG_RELOAD_ALL":"Od\u015bwie\u017c wszystko","MSG_ROTATE_DEVICE":"Obr\u00f3\u0107 urz\u0105dzenie","MSG_SAMPLE_FEED":"Przyk\u0142adowe dane","MSG_SAMPLE_FEEDS":"Przyk\u0142adowe dane","MSG_SELECT_ALL":"Zaznacz wszystkie","MSG_SELECT_NONE":"Odznacz wszystkie","MSG_SELECTED":"Wybrane: {num}","MSG_SHOW_SIZE":"Poka\u017c rozmiar","MSG_SHOW_SIZES":"Poka\u017c rozmiary","MSG_SINGLE_MODE":"Pojedynczy rozmiar","MSG_VIEWPORT_SIZE":"Rozmiar widocznego obszaru"}};</script></head>
+
+  <body>
+    <tf-creative-preview id="preview-app"></tf-creative-preview>
+  
+
+</body></html>
